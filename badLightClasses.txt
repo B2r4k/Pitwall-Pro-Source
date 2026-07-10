@@ -1,0 +1,4 @@
+1571: <div className="p-1 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform">
+1682: <button onClick={() => setActiveTab('track_setup')} className="mt-6 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-xl text-sm font-bold transition backdrop-blur-md">Change Track</button>
+1930: <button onClick={resetPlayerSettings} className="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 border border-transparent rounded-full text-slate-400 hover:text-slate-600 dark:text-slate-400 transition flex items-center justify-center text-[10px] font-bold uppercase tracking-widest"><RotateCcw className="w-4 h-4"/><Tooltip content="Reset values to default."/></button>
+2303: className="w-full accent-indigo-500 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer"

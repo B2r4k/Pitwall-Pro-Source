@@ -1,0 +1,14 @@
+290:            <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between">
+300:            <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-between">
+312:         <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+331:                  className="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold flex items-center gap-2 transition disabled:opacity-50"
+367:         <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+377:                        <button onClick={() => setCurrentTelemetryIdx(Math.max(0, currentTelemetryIdx - 1))} disabled={currentTelemetryIdx === 0} className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded font-bold disabled:opacity-30">Önceki</button>
+379:                        <button onClick={() => setCurrentTelemetryIdx(Math.min(telemetries.length - 1, currentTelemetryIdx + 1))} disabled={currentTelemetryIdx === telemetries.length - 1} className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded font-bold disabled:opacity-30">Sonraki</button>
+390:                            <div className="border border-indigo-100 dark:border-indigo-900 bg-indigo-50/50 dark:bg-slate-800/50 p-4 rounded-xl relative">
+403:                                    <pre className="text-xs font-mono bg-white dark:bg-slate-900 p-3 rounded-lg border border-slate-200 dark:border-slate-700 overflow-x-auto whitespace-pre-wrap mt-4 text-slate-700 dark:text-slate-300">
+408:                                        <div className="bg-white dark:bg-slate-900 p-3 rounded border border-slate-200 dark:border-slate-700">
+412:                                        <div className="bg-white dark:bg-slate-900 p-3 rounded border border-slate-200 dark:border-slate-700">
+416:                                        <div className="bg-white dark:bg-slate-900 p-3 rounded border border-slate-200 dark:border-slate-700">
+431:         <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+440:                     <div key={fb.id} className="bg-slate-50 dark:bg-slate-800/50 p-5 border border-slate-200 dark:border-slate-700 rounded-xl relative group">

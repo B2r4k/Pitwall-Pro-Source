@@ -1,0 +1,95 @@
+  /{lang}/backend/api/v2/AvailDrivers:
+      operationId: GetAvailDrivers
+        Query Available Drivers.
+        - A request with no query parameters will return a 1 page, 20 drivers long response, descending order, with an OA range which upper limit is the maximum OA of the Token's account league.<br>
+          description: Available Drivers Response
+          x-summary: Available Drivers Response
+                $ref: '#/components/schemas/AvailDriversResponse'   
+          description: Available Drivers Error
+          x-summary: Available Drivers Error
+      operationId: GetDriverProfile
+        Retrieve Driver Profile data.
+        - When called with no query parameters, it'll return the profile of the Token's account driver (if there's a driver under contract). 
+          - If no driver under contract, property `driName`'s value will be `Unknown driver` and `driverNotFoundNote` will be `true`.
+        - If called with driver id, it'll return the corresponding profile.
+          - If the driver id is invalid, it'll default to token's driver or `Unknown driver`, depending on the case explained above. 
+        - $ref: '#/components/parameters/DriverTDId'
+          description: Driver Profile Data Response
+          x-summary: Driver Profile Data Response
+                  - $ref: '#/components/schemas/DriverProfileResponse'
+                  - $ref: '#/components/schemas/NoDriverProfileResponse'
+          description: Driver Profile Error
+          x-summary: Driver Profile Error
+        - $ref: '#/components/parameters/DriverTDId'
+          enum: [drivers, tds]
+          example: drivers
+          $ref: '#/components/schemas/SortDriver'
+          $ref: '#/components/schemas/SortDriver'
+          $ref: '#/components/schemas/SortDriver'
+      DriverTDId:
+      SortDriver:    
+          driverId:
+          driverId: 30357
+            (thin air at 7,500 feet) also caused problems for both cars and drivers. The final
+      DriverProfileResponse: 
+          driverNotFoundNote:
+          driverFaceAdmin:
+          driverNotify:
+          driverFaceUpdated:
+          driverFaceCost:
+          ownDriver:
+          driverNotFoundNote: true
+          faceImg: /images/driverfaces/10063.jpg
+          driverFaceAdmin: false
+          driverNotify: 0
+          driverFaceUpdated: 0
+          driverFaceCost: 0.1
+          ownDriver: 1
+          errorMsg: <font color="orange">This driver has already signed a contract with you.</font>
+      NoDriverProfileResponse:
+          driverNotFoundNote:
+          driName: Unknown driver
+          driverNotFoundNote: true
+            text: 'Answer sent: <b>My driver is a favorite of the fans</b> [<i>How popular is
+              your driver with the fans?</i>]'
+            text: 'Answer sent: <b>My driver is quite popular with the fans</b> [<i>How popular
+              is your driver with the fans?</i>]'
+      AvailDriversResponse:
+          drivers:
+          drivers:
+          driver:
+          driverChanges:
+          driver:
+          driverChanges:
+          - desc: Driver race position (11)
+          - desc: Driver qualifying position (11)
+          - desc: Driver salary
+                        - Index 8: Driver Mistake: 0: No, 1: Yes
+                        - Index 22: Driver's Helmet Link
+                        - Index 8: Driver Mistake: 0: No, 1: Yes
+                        - Index 11: Driver Mistake Time in miliseconds
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              - /images/driverhelmet.png
+              name: S.E.X Drivers
+              name: S.E.X Drivers
+            desc: Salary for your driver
+            desc: Salary for your driver
+            desc: Salary for your driver
+          driverTransfers:
+          segmentSelected: driverTransfers
+          driverTransfers:
+          - name: STORM Drivers
+          - name: S.E.X Drivers
+          - name: FinnGproDrivers
+          - name: Sunday Drivers

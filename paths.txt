@@ -1,0 +1,51 @@
+51:paths:
+52-  /{lang}/backend/api/v2/Menu:
+53-    parameters:
+54-      - $ref: '#/components/parameters/Lang'
+55-    get:
+56-      tags: 
+57-        - Manager Resources
+58-      operationId: Menu
+59-      description: Retrieving all GPRO app menu elements.
+60-      security:
+61-        - Bearer: []
+62-      responses:
+63-        '200':    
+64-          description: Menu Response
+65-          x-summary: Menu Response
+66-          content:
+67-            application/json:
+68-              schema:
+69-                $ref: '#/components/schemas/MenuResponse'
+70-        '401':
+71-          description: Menu Error
+72-          x-summary: Menu Error
+73-          content:
+74-            application/json:
+75-              schema:
+76-                $ref: '#/components/schemas/MenuError'
+77-  /{lang}/backend/api/v2/office:
+78-    parameters:
+79-      - $ref: '#/components/parameters/Lang'
+80-    get:
+81-      tags: 
+82-        - Manager Resources
+83-      operationId: Office
+84-      description: Retrieving all GPRO app office elements.
+85-      security:
+86-        - Bearer: []
+87-      responses:
+88-        '200':    
+89-          description: Office Response
+90-          x-summary: Office Response
+91-          content:
+92-            application/json:
+93-              schema:
+94-                $ref: '#/components/schemas/OfficeResponse' 
+95-        '401':
+96-          description: Office Error
+97-          x-summary: Office Error
+98-          content:
+99-            application/json:
+100-              schema:
+101-                $ref: '#/components/schemas/LoggedOut'

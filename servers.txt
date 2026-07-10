@@ -1,0 +1,3 @@
+12:    url: 'https://gpro.net/images/api_gpro_logo.jpg'
+14:servers:
+15:  - url: https://gpro.net

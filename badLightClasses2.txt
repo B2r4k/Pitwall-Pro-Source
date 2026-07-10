@@ -1,0 +1,2 @@
+1571: <div className="p-1 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform">
+1682: <button onClick={() => setActiveTab('track_setup')} className="mt-6 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-xl text-sm font-bold transition backdrop-blur-md">Change Track</button>

@@ -1,0 +1,1 @@
+1930: <button onClick={resetPlayerSettings} className="p-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 border border-transparent rounded-full text-slate-400 hover:text-slate-600 dark:text-slate-400 transition flex items-center justify-center text-[10px] font-bold uppercase tracking-widest"><RotateCcw className="w-4 h-4"/><Tooltip content="Reset values to default."/></button>

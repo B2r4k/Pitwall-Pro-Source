@@ -1,0 +1,6 @@
+{
+  "name": "GPRO Strateji Hesaplayıcı",
+  "description": "GPRO (Grand Prix Racing Online) için yarış stratejisi, lastik aşınması ve yakıt tüketimini analiz eden dinamik araç.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

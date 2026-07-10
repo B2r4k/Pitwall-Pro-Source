@@ -1,0 +1,6 @@
+DARK-NO-LIGHT src/App.tsx:1649: <div className="bg-slate-800/50 backdrop-blur-md p-2.5 rounded-xl border border-slate-700/50 shrink-0">
+DARK-NO-LIGHT src/App.tsx:2669: <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4 overflow-y-auto animate-fade-in">
+DARK-NO-LIGHT src/components/SimulationEngine.tsx:68: <div className="relative w-full h-40 sm:h-48 bg-slate-900 rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-4">
+DARK-NO-LIGHT src/components/SimulationEngine.tsx:708: <div className="bg-slate-900 border border-slate-800 rounded-2xl shadow-inner h-24 mb-2 flex items-center justify-center relative overflow-hidden md:col-span-2">
+DARK-NO-LIGHT src/components/SimulationEngine.tsx:722: <div className="h-4 bg-slate-800 rounded-full border border-slate-700 relative overflow-visible">
+DARK-NO-LIGHT src/components/Tooltip.tsx:66: className="fixed z-[99999] w-max max-w-[250px] p-2.5 bg-slate-800 text-slate-100 text-[11px] rounded-lg shadow-xl shadow-slate-900/20 border border-slate-700 pointer-events-none leading-relaxed font-medium animate-in fade-in zoom-in-95 duration-100 whitespace-normal"

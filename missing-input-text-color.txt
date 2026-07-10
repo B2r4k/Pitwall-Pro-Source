@@ -1,0 +1,21 @@
+1416: <input
+1428: <select value={settings.language} onChange={e => setLocalSettings({...settings, language: e.target.value, autoTranslate: false})} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none"
+1439: <input
+1451: <input
+1759: <select
+1778: <select value={customTrack.wearSeverity} onChange={e => setCustomTrack({...customTrack, wearSeverity: e.target.value as any})} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none">
+1784: <select value={customTrack.fuelSeverity} onChange={e => setCustomTrack({...customTrack, fuelSeverity: e.target.value as any})} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none">
+1941: <select value={player.tyreSupplier} onChange={e => setPlayer({...player, tyreSupplier: e.target.value})} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none">
+1962: <input type="range" min="1.5" max="5.0" step="0.1" value={player.baseFuelPerLap} onChange={e => setPlayer({...player, baseFuelPerLap: Number(e.target.value)})} className="w-full accent-indigo-500" />
+1974: <input type="range" min="0.5" max="1.5" step="0.05" value={player.baseWearMultiplier} onChange={e => setPlayer({...player, baseWearMultiplier: Number(e.target.value)})} className="w-full accent-indigo-500" />
+1986: <input type="range" min="0" max="100" step="1" value={player.riskAggression} onChange={e => setPlayer({...player, riskAggression: Number(e.target.value)})} className="w-full accent-indigo-500 mb-2" />
+2004: <input type="range" min="0" max="100" value={player.risks?.[k as keyof typeof player.risks] || 0} onChange={e => {
+2023: <input type="range" min="0" max="250" value={player.driverFocus} onChange={e => setPlayer({...player, driverFocus: Number(e.target.value)})} className="w-full accent-indigo-500" />
+2035: <input type="range" min="0" max="250" value={player.driverStamina} onChange={e => setPlayer({...player, driverStamina: Number(e.target.value)})} className="w-full accent-indigo-500" />
+2047: <input type="range" min="0" max="250" value={player.driverExperience} onChange={e => setPlayer({...player, driverExperience: Number(e.target.value)})} className="w-full accent-indigo-500" />
+2061: <select value={player.league || "Rookie"} onChange={e => setPlayer({...player, league: e.target.value as any})} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none">
+2096: <input
+2290: <input
+2438: <input
+2635: <textarea
+2643: <select value={feedbackRating} onChange={e => setFeedbackRating(Number(e.target.value))} className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 rounded-xl p-2.5 text-sm transition-all focus:ring-2 focus:ring-indigo-500/50 outline-none">

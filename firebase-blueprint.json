@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "createdAt", "updatedAt"]
+    },
+    "DriverStats": {
+      "title": "DriverStats",
+      "description": "Scraped driver stats from GPRO.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "energy": { "type": "number" },
+        "focus": { "type": "number" },
+        "stamina": { "type": "number" },
+        "experience": { "type": "number" },
+        "weight": { "type": "number" },
+        "updatedAt": { "type": "timestamp" }
+      },
+      "required": ["userId", "energy", "focus", "stamina", "experience", "weight", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile."
+    },
+    "driverStats/{userId}": {
+      "schema": "DriverStats",
+      "description": "Stores user's latest scraped driver stats from GPRO."
+    }
+  }
+}

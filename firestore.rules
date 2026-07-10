@@ -1,0 +1,107 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper Functions
+    function isSignedIn() {
+      return request.auth != null ;
+    }
+    
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+    
+    // User Profile Validation
+    function isValidUserProfile(data) {
+      return data.size() >= 2
+        && data.keys().hasAll(['userId', 'updatedAt'])
+        && data.userId == request.auth.uid
+        && data.updatedAt is timestamp;
+    }
+
+    // DriverStats Validation
+    function isValidDriverStats(data) {
+      return data.size() >= 7 && data.size() <= 10
+        && data.keys().hasAll(['userId', 'energy', 'focus', 'stamina', 'experience', 'weight', 'updatedAt'])
+        && data.userId == request.auth.uid
+        && data.energy is number
+        && data.focus is number
+        && data.stamina is number
+        && data.experience is number
+        && data.weight is number
+        && data.updatedAt is timestamp;
+    }
+
+    // Default deny
+    
+    match /feedback/{docId} {
+      allow read: if isSignedIn() && request.auth.token.email == 'burakis204@gmail.com';
+      allow create: if true;
+    }
+    match /global_settings/{docId} {
+      allow read: if true;
+      allow write: if isSignedIn() && request.auth.token.email == 'burakis204@gmail.com';
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    match /users/{userId} {
+      // Must be logged in, email verified, and requesting their own doc
+      allow get: if isSignedIn() && request.auth.uid == userId;
+      allow list: if isSignedIn() && request.auth.uid == userId && resource.data.userId == request.auth.uid;
+      
+      allow create: if isSignedIn() 
+                    && request.auth.uid == userId 
+                    && isValidUserProfile(incoming())
+                    && incoming().updatedAt == request.time;
+                    
+      allow update: if isSignedIn() 
+                    && request.auth.uid == userId 
+                    && isValidUserProfile(incoming())
+                    && incoming().userId == existing().userId
+                    && incoming().updatedAt == request.time;
+                    
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    
+    match /notes/{userId} {
+      allow get: if isSignedIn() && request.auth.uid == userId;
+      allow list: if isSignedIn() && request.auth.uid == userId && resource.data.userId == request.auth.uid;
+      
+      allow create: if isSignedIn()
+                   && request.auth.uid == userId;
+      
+      allow update: if isSignedIn()
+                   && request.auth.uid == userId;
+                   
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+    
+    match /telemetry_contributions/{docId} {
+      // Allow any signed-in user to read all telemetry data
+      allow read: if isSignedIn();
+      // Allow creation of telemetry data
+      allow create: if isSignedIn();
+    }
+    match /driverStats/{userId} {
+      allow get: if isSignedIn() && request.auth.uid == userId;
+      allow list: if isSignedIn() && request.auth.uid == userId && resource.data.userId == request.auth.uid;
+      
+      allow create: if isSignedIn() 
+                    && request.auth.uid == userId 
+                    && isValidDriverStats(incoming())
+                    && incoming().updatedAt == request.time;
+                    
+      allow update: if isSignedIn() 
+                    && request.auth.uid == userId 
+                    && isValidDriverStats(incoming())
+                    && incoming().userId == existing().userId
+                    && incoming().updatedAt == request.time
+                    && incoming().diff(existing()).affectedKeys().hasOnly(['energy', 'focus', 'stamina', 'experience', 'weight', 'updatedAt']);
+                    
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+  }
+}

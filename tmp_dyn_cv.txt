@@ -1,0 +1,1 @@
+261:className={`w-full p-2.5 rounded-lg border dark:border-slate-700 font-bold text-sm transition-colors flex items-center justify-center gap-2 ${rainEnabled ? 'bg-blue-50 text-blue-700 border-blue-200' : 'bg-slate-50 dark:bg-slate-800/50 text-slate-400 border-slate-200 dark:border-slate-700'} `}

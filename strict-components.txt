@@ -1,0 +1,1 @@
+Missing Dark Text: src/components/CalibrationView.tsx:430: className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-900 rounded-xl font-black transition-colors flex items-center justify-center gap-2 shadow-sm uppercase tracking-wider"
