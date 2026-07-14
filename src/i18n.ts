@@ -1,22 +1,60 @@
 export const translations: Record<string, Record<string, string>> = {
-    tr: {
-    "Toggle overlay to see missing inputs.": "Eksik girdileri görmek için arayüzü aç/kapa.",
+  tr: {
+    "The next race is starting within 24 hours. Ensure your strategy is ready.": "Yarışa 24 saatten az kaldı. Stratejini ve hazırlıklarını gözden geçir.",
+    "Risk level is very high for your current league. This significantly increases mistake probability.": "Bulunduğun lige göre risk seviyesi çok yüksek. Bu durum hata ihtimalini artırabilir.",
+    "Rain is expected. Do not forget to adjust your pit strategy for wet tyres.": "Yağmur bekleniyor. Yağmur lastiklerine uygun bir pit stratejisi ayarladığından emin ol.",
+    "High risk in wet conditions significantly increases crash probability.": "Islak zeminde yüksek risk almak, kaza ihtimalini ciddi şekilde artırır.",
+    "This track is hard on tyres. Consider harder compounds or shorter stints.": "Bu pist lastikleri çok fazla aşındırıyor. Daha sert hamurlar veya daha kısa stintler planla.",
+    "Driver stamina is critically low. Late-race mistakes are highly likely.": "Sürücünün kondisyonu kritik seviyede düşük. Yarışın sonlarında hata yapma riski yüksek.",
+    "Low track temperatures make it harder to warm up harder tyre compounds.": "Düşük pist sıcaklıkları sert hamur lastikleri ısıtmayı zorlaştırır.",
+    "High track temperatures will accelerate tyre wear.": "Yüksek pist sıcaklıkları lastik aşınmasını önemli ölçüde hızlandıracaktır.",
+    "Your car has high fuel consumption. Check your fuel limits for longer stints.": "Aracının yakıt tüketimi yüksek. Uzun stintler için depo limitlerini kontrol et.",
+
+    "Driver Fatigue Warning": "Sürücü Yorgunluğu Uyarısı",
+    "Your driver's stamina is very low. They might make mistakes towards the end of the race.": "Sürücünüzün kondisyonu çok düşük. Yarış sonlarına doğru hata yapma riski yüksek.",
+    "Cold Track Conditions": "Soğuk Pist Koşulları",
+    "Track temperature is very low. It will be difficult to warm up harder tyre compounds.": "Pist sıcaklığı oldukça düşük. Sert lastik hamurlarını ısıtmakta zorlanabilirsiniz.",
+    "Hot Track Conditions": "Sıcak Pist Koşulları",
+    "Track temperature is very high. Tyres will overheat and degrade much faster than usual.": "Pist sıcaklığı çok yüksek. Lastikler aşırı ısınacak ve normalden daha hızlı aşınacaktır.",
+    "Extreme Risk in Rain": "Yağmurda Yüksek Risk",
+    "Taking high risks in wet conditions drastically increases the chance of a crash.": "Islak zeminde yüksek risk almak kaza ihtimalini büyük ölçüde artırır.",
+    "High Fuel Consumption": "Yüksek Yakıt Tüketimi",
+    "Your car consumes a lot of fuel. Be careful with tank limits on longer stints.": "Aracınız ortalamanın üzerinde yakıt tüketiyor. Uzun stintlerde depo limitlerine dikkat edin.",
+
+    "The next race is tomorrow! Make sure your strategy is ready.": "Sıradaki yarış yarın! Stratejinizin hazır olduğundan emin olun.",
+    "High Risk Strategy Warning": "Yüksek Riskli Strateji Uyarısı",
+    "You have set a very high risk aggression for a lower league driver. This might result in frequent mistakes or crashes.": "Düşük lig sürücüsü için çok yüksek bir risk belirlediniz. Bu durum sık sık hata yapmasına veya kaza yapmasına neden olabilir.",
+    "Rain Expected": "Yağmur Bekleniyor",
+    "Track conditions indicate rain. Make sure your pit strategy adapts to wet weather tyres.": "Pist koşulları yağmur gösteriyor. Pit stratejinizin ıslak zemin lastiklerine uyarlandığından emin olun.",
+    "High Track Wear": "Yüksek Pist Aşınması",
+    "This track is highly demanding on tyres. Consider harder compounds or shorter stints.": "Bu pist lastikler için oldukça zorlayıcı. Daha sert hamurlar veya daha kısa stintler düşünün.",
+
+    "Live Race Active!": "Yarış Devam Ediyor!",
+    "We are currently within race hours. Jump into the race when you are ready to apply your strategies!": "Şu anda yarış saatleri içerisindeyiz. Stratejilerinizi uygulamak için hazırsanız yarışa geçin!",
+    "New Update Available": "Yeni Güncelleme Mevcut",
+    "Mark as Read": "Okudum",
+    "View details": "İncele",
+    "Toggle overlay to see missing inputs.":
+      "Eksik girdileri görmek için arayüzü aç/kapa.",
     "Overlay Active": "Arayüz Açık",
     "Overlay Off": "Arayüz Kapalı",
 
-    "Auto-calibrated from API Testing Data!": "API Test Verilerinden otomatik kalibre edildi!",
-    "No testing/practice data found. Run Auto Sync in Data tab first.": "Test/antrenman verisi bulunamadı. Önce Veri sekmesinden Otomatik Senkronizasyon çalıştırın.",
-    
+    "Auto-calibrated from API Testing Data!":
+      "API Test Verilerinden otomatik kalibre edildi!",
+    "No testing/practice data found. Run Auto Sync in Data tab first.":
+      "Test/antrenman verisi bulunamadı. Önce Veri sekmesinden Otomatik Senkronizasyon çalıştırın.",
 
     "Initializing Workspace...": "Çalışma Alanı Başlatılıyor...",
-    "Checking for updates and syncing configurations.": "Güncellemeler kontrol ediliyor ve yapılandırmalar senkronize ediliyor.",
+    "Checking for updates and syncing configurations.":
+      "Güncellemeler kontrol ediliyor ve yapılandırmalar senkronize ediliyor.",
     "Please Wait": "Lütfen Bekleyin",
     "Warming up the tyres...": "Lastikler ısıtılıyor...",
     "Filling the fuel tank...": "Yakıt deposu dolduruluyor...",
     "Bribing the stewards...": "Hakemlere rüşvet veriliyor...",
     "Analyzing telemetry data...": "Telemetri verileri analiz ediliyor...",
     "Complaining on the team radio...": "Takım radyosunda şikayet ediliyor...",
-    "Calculating optimum pit strategies...": "Optimum pit stratejileri hesaplanıyor...",
+    "Calculating optimum pit strategies...":
+      "Optimum pit stratejileri hesaplanıyor...",
     "Checking weather radars...": "Hava durumu radarları kontrol ediliyor...",
     "Adjusting front wing angles...": "Ön kanat açıları ayarlanıyor...",
     "Preparing the pit crew...": "Pit ekibi hazırlanıyor...",
@@ -32,8 +70,10 @@ export const translations: Record<string, Record<string, string>> = {
 
     "Race Preparation Status": "Yarış Hazırlık Durumu",
     "Select a track to begin.": "Başlamak için bir pist seçin.",
-    "Enter driver skills for accurate wear.": "Daha doğru aşınma hesabı için sürücü özelliklerini girin.",
-    "All systems ready for strategy calculation.": "Tüm sistemler strateji hesaplaması için hazır.",
+    "Enter driver skills for accurate wear.":
+      "Daha doğru aşınma hesabı için sürücü özelliklerini girin.",
+    "All systems ready for strategy calculation.":
+      "Tüm sistemler strateji hesaplaması için hazır.",
     "Track Data": "Pist Verisi",
     "Driver Stats": "Sürücü İstatistikleri",
     "Data & Assistant": "Veri & Asistan",
@@ -51,54 +91,74 @@ export const translations: Record<string, Record<string, string>> = {
     "Relative Time Cost:": "Görecelı Zaman Kaybı:",
     "All Valid Strategies": "Tüm Geçerli Stratejiler",
     "Strategy Engine": "Strateji Motoru",
-    "Montreal": "Montreal (Kanada)",
-    "Melbourne": "Melbourne (Avustralya)",
-    "Sepang": "Sepang (Malezya)",
-    "Sakhir": "Sakhir (Bahreyn)",
-    "Barcelona": "Barcelona (İspanya)",
-    "Monaco": "Monako",
-    "Silverstone": "Silverstone (İngiltere)",
+    Montreal: "Montreal (Kanada)",
+    Melbourne: "Melbourne (Avustralya)",
+    Sepang: "Sepang (Malezya)",
+    Sakhir: "Sakhir (Bahreyn)",
+    Barcelona: "Barcelona (İspanya)",
+    Monaco: "Monako",
+    Silverstone: "Silverstone (İngiltere)",
     "Custom Track": "-- Özel Pist (Manuel) --",
     "Dashboard Overview": "Genel Bakış",
     "Strategy Wizard": "Strateji Uzmanı",
     "Tyre Analysis": "Lastik Analizi",
-    "Calibration": "Kalibrasyon",
-    "Checklist": "Kontrol Listesi",
+    Calibration: "Kalibrasyon",
+    Checklist: "Kontrol Listesi",
     "Setup Assistant": "Ayar Asistanı",
     "Calibration (Test Laps)": "Kalibrasyon (Test Turları)",
     "Track Temperature": "Pist Sıcaklığı",
     "Base Wear": "Temel Aşınma",
     "Total Race Laps": "Toplam Yarış Turu",
     "Pit Stop Time Cost": "Pit Stop Süresi",
-    "Use intelligent text recognition to auto-fill track properties from an in-game screenshot.": "Oyun içi ekran görüntüsünden pist özelliklerini otomatik doldurmak için akıllı metin tanımayı kullanın.",
-    "No valid strategy found. Tyres may be overheating or wearing too fast. (Try softening temperature or wear conditions from the Track tab)": "Geçerli strateji bulunamadı. Lastikler aşırı ısınıyor veya çok hızlı aşınıyor olabilir. (Pist sekmesinden sıcaklık veya aşınma koşullarını yumuşatmayı deneyin)",
-    "No clear data found, try cropping the area more precisely.": "Net veri bulunamadı, alanı daha hassas kırpmayı deneyin.",
-    "Settings": "Ayarlar",
+    "Use intelligent text recognition to auto-fill track properties from an in-game screenshot.":
+      "Oyun içi ekran görüntüsünden pist özelliklerini otomatik doldurmak için akıllı metin tanımayı kullanın.",
+    "No valid strategy found. Tyres may be overheating or wearing too fast. (Try softening temperature or wear conditions from the Track tab)":
+      "Geçerli strateji bulunamadı. Lastikler aşırı ısınıyor veya çok hızlı aşınıyor olabilir. (Pist sekmesinden sıcaklık veya aşınma koşullarını yumuşatmayı deneyin)",
+    "No clear data found, try cropping the area more precisely.":
+      "Net veri bulunamadı, alanı daha hassas kırpmayı deneyin.",
+    Settings: "Ayarlar",
     "Language & Translation": "Dil ve Çeviri",
-    "Race Analysis & Pre-Race Checklist": "Yarış Analizi ve Yarış Öncesi Kontrol Listesi",
-    "Calibration and test lap evaluator.": "Kalibrasyon ve test turu değerlendiricisi.",
+    "Race Analysis & Pre-Race Checklist":
+      "Yarış Analizi ve Yarış Öncesi Kontrol Listesi",
+    "Calibration and test lap evaluator.":
+      "Kalibrasyon ve test turu değerlendiricisi.",
     "Open Assistant": "Asistanı Aç",
-    "Error connecting to AI Assistant.": "AI Asistanı'na bağlanırken hata oluştu.",
-    "E.g. What should I do if it rains at lap 20?": "Örn. 20. turda yağmur yağarsa ne yapmalıyım?",
+    "Error connecting to AI Assistant.":
+      "AI Asistanı'na bağlanırken hata oluştu.",
+    "E.g. What should I do if it rains at lap 20?":
+      "Örn. 20. turda yağmur yağarsa ne yapmalıyım?",
     "Error!": "Hata!",
-    "Settings successfully calibrated to Profile!": "Ayarlar başarıyla Profil'e kalibre edildi!",
-    "Under GPRO rules, you may only use one type of dry compound per race. Other stints will be synced automatically.": "GPRO kuralları gereği, maç başına sadece 1 tür kuru hava lastiği kullanabilirsiniz. Mevcut stintleriniz otomatik güncellenecek.",
+    "Settings successfully calibrated to Profile!":
+      "Ayarlar başarıyla Profil'e kalibre edildi!",
+    "Under GPRO rules, you may only use one type of dry compound per race. Other stints will be synced automatically.":
+      "GPRO kuralları gereği, maç başına sadece 1 tür kuru hava lastiği kullanabilirsiniz. Mevcut stintleriniz otomatik güncellenecek.",
     "Incorrect number of laps entered.": "Geçersiz tur sayısı girildi.",
-    "🚨 Your tyre wear factor is very high! You reached the puncture limits in some stints. Lower driver aggression.": "🚨 Lastik aşınma faktörünüz çok yüksek! Bazı stintlerde patlama sınırına ulaşılmış. Sürücü riskini/agresifliğini düşürün.",
-    "✨ Excellent tyre economy. Wear is well below average.": "✨ Mükemmel lastik ekonomisi. Aşınma ortalamanın oldukça altında.",
-    "📊 Your tyre wear is around the standard average.": "📊 Lastik aşınmanız standart ortalamalarda.",
-    "⛽ Your base fuel consumption is very high. Consider optimizing setups or engine updates.": "⛽ Bazen yakıt tüketiminiz çok yüksek. Araç ayarlarını veya motor güncellemelerini düşünün.",
-    "⚠️ Your stint laps sum up to more than the track laps! Check your inputs.": "⚠️ Stint turlarınızın toplamı pist turundan fazla! Girdilerinizi kontrol edin.",
-    "⚠️ You probably DNF'd or crashed, you mapped fewer laps than the track total.": "⚠️ Muhtemelen yarış dışı kaldınız, pist toplamından daha az tur girdiniz.",
-    "💧 Despite heavy rain probability, you stubbornly stayed on dry tyres! The high wear reflects this loss of grip.": "💧 Yüksek yağmur ihtimaline rağmen kuru hava lastiğinde kalmışsınız! Aşınma verileri bu tutunma eksikliğini yansıtıyor.",
-    "🌤️ You played it too safe with Rain tyres in mostly dry conditions, causing heavy wear and time loss.": "🌤️ Çoğunlukla kuru hava olan koşullarda fazla güvenli oynayıp Yağmur lastiği kullanmışsınız, yüksek aşınma ve zaman kaybı yaşanmış.",
-    "🌦️ Your tyre selection in transition periods looks reasonable.": "🌦️ Geçiş periyotlarındaki lastik seçiminiz makul görünüyor.",
+    "🚨 Your tyre wear factor is very high! You reached the puncture limits in some stints. Lower driver aggression.":
+      "🚨 Lastik aşınma faktörünüz çok yüksek! Bazı stintlerde patlama sınırına ulaşılmış. Sürücü riskini/agresifliğini düşürün.",
+    "✨ Excellent tyre economy. Wear is well below average.":
+      "✨ Mükemmel lastik ekonomisi. Aşınma ortalamanın oldukça altında.",
+    "📊 Your tyre wear is around the standard average.":
+      "📊 Lastik aşınmanız standart ortalamalarda.",
+    "⛽ Your base fuel consumption is very high. Consider optimizing setups or engine updates.":
+      "⛽ Bazen yakıt tüketiminiz çok yüksek. Araç ayarlarını veya motor güncellemelerini düşünün.",
+    "⚠️ Your stint laps sum up to more than the track laps! Check your inputs.":
+      "⚠️ Stint turlarınızın toplamı pist turundan fazla! Girdilerinizi kontrol edin.",
+    "⚠️ You probably DNF'd or crashed, you mapped fewer laps than the track total.":
+      "⚠️ Muhtemelen yarış dışı kaldınız, pist toplamından daha az tur girdiniz.",
+    "💧 Despite heavy rain probability, you stubbornly stayed on dry tyres! The high wear reflects this loss of grip.":
+      "💧 Yüksek yağmur ihtimaline rağmen kuru hava lastiğinde kalmışsınız! Aşınma verileri bu tutunma eksikliğini yansıtıyor.",
+    "🌤️ You played it too safe with Rain tyres in mostly dry conditions, causing heavy wear and time loss.":
+      "🌤️ Çoğunlukla kuru hava olan koşullarda fazla güvenli oynayıp Yağmur lastiği kullanmışsınız, yüksek aşınma ve zaman kaybı yaşanmış.",
+    "🌦️ Your tyre selection in transition periods looks reasonable.":
+      "🌦️ Geçiş periyotlarındaki lastik seçiminiz makul görünüyor.",
     "Auto Translate": "Otomatik Çeviri",
-    "Display in other languages automatically": "Uygulama dilini tarayıcıya göre otomatik ayarla",
-    "Enable automatic local translation based on your browser language.": "Tarayıcı dilinize göre otomatik yerel çeviriyi etkinleştir.",
+    "Display in other languages automatically":
+      "Uygulama dilini tarayıcıya göre otomatik ayarla",
+    "Enable automatic local translation based on your browser language.":
+      "Tarayıcı dilinize göre otomatik yerel çeviriyi etkinleştir.",
     "AI Assistant": "Yapay Zeka Asistanı",
     "Select your preferred language": "Tercih ettiğiniz dili seçin",
-    "Appearance": "Görünüm",
+    Appearance: "Görünüm",
     "Tyre Degradation Curve": "Lastik Aşınma Eğrisi",
     "Lap Distribution Chart": "Tur Dağılım Grafiği",
     "Driver Profile": "Sürücü Profili",
@@ -110,22 +170,23 @@ export const translations: Record<string, Record<string, string>> = {
     "Max Laps (Medium)": "Maks. Tur (Medium)",
     "Ignore Stats (Neutral)": "Özellikleri Yoksay (Nötr)",
     "Driver Aggression": "Sürücü Agresifliği",
-    "Driver skills and chassis impact base wear.": "Sürücü yetenekleri ve şasi temel aşınmayı etkiler.",
+    "Driver skills and chassis impact base wear.":
+      "Sürücü yetenekleri ve şasi temel aşınmayı etkiler.",
     "Tyre Supplier": "Lastik Tedarikçisi",
     "Base Fuel Burn": "Temel Yakıt Tüketimi",
     "Tyre Wear Multiplier": "Lastik Aşınma Çarpanı",
-    "Focus": "Odaklanma",
-    "Stamina": "Dayanıklılık",
-    "Experience": "Deneyim",
+    Focus: "Odaklanma",
+    Stamina: "Dayanıklılık",
+    Experience: "Deneyim",
     "Weather Data": "Hava Durumu Verisi",
     "Target Laps": "Hedef Turlar",
     "Fuel Calculator": "Yakıt Hesaplayıcı",
-    "Calculator": "Hesaplayıcı",
-    "Account": "Hesap",
+    Calculator: "Hesaplayıcı",
+    Account: "Hesap",
     "Please log in": "Lütfen giriş yapın",
     "Pre-Race Checklist": "Yarış Öncesi Kontrol Listesi",
-    "Save": "Kaydet",
-    "Error": "Hata",
+    Save: "Kaydet",
+    Error: "Hata",
     "Loading...": "Yükleniyor...",
     "Loaded!": "Yüklendi!",
     "Loaded successfully!": "Başarıyla yüklendi!",
@@ -135,38 +196,49 @@ export const translations: Record<string, Record<string, string>> = {
     "Saved successfully!": "Başarıyla kaydedildi!",
     "Load error!": "Yükleme hatası!",
     "Saving driver...": "Sürücü kaydediliyor...",
-    "Please enter a Game API Token in Settings first.": "Lütfen önce Ayarlar'dan Game API Jetonunu (Token) girin.",
+    "Please enter a Game API Token in Settings first.":
+      "Lütfen önce Ayarlar'dan Game API Jetonunu (Token) girin.",
     "Copy Profile ID": "Profil Kimliğini Kopyala",
     "Load Profile ID": "Profil Kimliğini Yükle",
     "Paste GPRO-PROFILE code here:": "GPRO-PROFILE kodunu buraya yapıştırın:",
     "Copied ID!": "Kimlik Kopyalandı!",
     "Invalid profile code.": "Geçersiz profil kodu.",
-    "Could not read clipboard automatically. Paste GPRO-PROFILE code here:": "Pano otomatik olarak okunamadı. GPRO-PROFILE kodunu buraya yapıştırın:",
+    "Could not read clipboard automatically. Paste GPRO-PROFILE code here:":
+      "Pano otomatik olarak okunamadı. GPRO-PROFILE kodunu buraya yapıştırın:",
     "Download Summary": "Özeti İndir",
     "Date Detection:": "Tarih Algılama:",
-    "Reset": "Sıfırla",
+    Reset: "Sıfırla",
     "Starting Grid": "Başlangıç S.",
-    "Penalizes pit stops more if you start at the front.": "Ön sıralardan başlarsanız fazladan pit stop yapmayı trafiğe takılma riskinden dolayı cezalandırır.",
-    "Access Token (Max 1 per account)": "Erişim Jetonu (Hesap başına en fazla 1)",
-    "Check weather forecast for Q and R": "Sıralama ve Yarış için hava durumu tahminini kontrol et",
-    "Adjust car setup for current temperature": "Mevcut sıcaklık için araç ayarını yap",
+    "Penalizes pit stops more if you start at the front.":
+      "Ön sıralardan başlarsanız fazladan pit stop yapmayı trafiğe takılma riskinden dolayı cezalandırır.",
+    "Access Token (Max 1 per account)":
+      "Erişim Jetonu (Hesap başına en fazla 1)",
+    "Check weather forecast for Q and R":
+      "Sıralama ve Yarış için hava durumu tahminini kontrol et",
+    "Adjust car setup for current temperature":
+      "Mevcut sıcaklık için araç ayarını yap",
     "Set driver risk/aggression": "Sürücü riskini/agresifliğini ayarla",
     "Calculate and set starting fuel": "Başlangıç yakıtını hesapla ve ayarla",
     "Choose starting tyre compound": "Başlangıç lastik hamurunu seç",
-    "Confirm pit strategy (stints/laps)": "Pit stratejisini onayla (stintler/turlar)",
-    "Check and configure secondary strategy for rain": "Yağmur için ikincil stratejiyi kontrol et ve yapılandır",
-    "Verify part wear and replace if necessary": "Parça aşınmasını doğrula ve gerekiyorsa değiştir",
+    "Confirm pit strategy (stints/laps)":
+      "Pit stratejisini onayla (stintler/turlar)",
+    "Check and configure secondary strategy for rain":
+      "Yağmur için ikincil stratejiyi kontrol et ve yapılandır",
+    "Verify part wear and replace if necessary":
+      "Parça aşınmasını doğrula ve gerekiyorsa değiştir",
     "Double check test lap data": "Test turu verilerini iki kez kontrol et",
-    
-    "Enter past race data to precisely calibrate your car and driver stats.": "Araba ve pilot kalibrasyonunuzu hassas bir şekilde yapmak için geçmiş yarış verilerini girin.",
+
+    "Enter past race data to precisely calibrate your car and driver stats.":
+      "Araba ve pilot kalibrasyonunuzu hassas bir şekilde yapmak için geçmiş yarış verilerini girin.",
     "Past Track": "Geçmiş Pist",
     "Rain Conditions?": "Yağmur Koşulları?",
-    "Active": "Aktif",
+    Active: "Aktif",
     "Dry Race": "Kuru Yarış",
     "Estimated Rain Probabilities (%)": "Tahmini Yağmur İhtimali (%)",
     "Pit Strategy & Stints": "Pit Stratejisi ve Stintler",
-    "Add your stints. At least 1 dry compound is mandatory.": "Stintlerinizi ekleyin. Kuru zemin için en az 1 tür zorunludur.",
-    "Compound": "Lastik",
+    "Add your stints. At least 1 dry compound is mandatory.":
+      "Stintlerinizi ekleyin. Kuru zemin için en az 1 tür zorunludur.",
+    Compound: "Lastik",
     "Laps (Stint)": "Tur (Stint)",
     "Wear (%)": "Aşınma (%)",
     "Fuel (L)": "Yakıt (L)",
@@ -181,146 +253,174 @@ export const translations: Record<string, Record<string, string>> = {
     "Wear Factor": "Aşınma Çarpanı",
     "AI Engineer Insight": "Yapay Zeka Mühendis Görüşü",
     "Accept and Apply to Profile": "Kabul Et ve Profile Uygula",
-    "Values will be synced to your account.": "Değerler hesabınızla senkronize edilecektir.",
-    "Need help preparing for the race?": "Yarışa hazırlanmak için yardıma mı ihtiyacınız var?",
+    "Values will be synced to your account.":
+      "Değerler hesabınızla senkronize edilecektir.",
+    "Need help preparing for the race?":
+      "Yarışa hazırlanmak için yardıma mı ihtiyacınız var?",
     "Race Assistant": "Yarış Asistanı",
-    "All checks complete! Great job, your car setup and strategy are ready. Trust your analysis and good luck out there on the track!": "Tüm kontroller tamamlandı! Harika iş çıkardınız, araç ve stratejiniz hazır. Analizinize güvenin ve pistte başarılar!",
-    "You're almost there. Double check your tyre strategy based on the track temperature. It often drops towards the end of the race!": "Neredeyse bitti. Pist sıcaklığına bağlı olarak lastik stratejinizi tekrar kontrol edin. Sıcaklıklar genellikle yarışın sonlarına doğru düşer!",
-    "Welcome to race day! Start by configuring your": "Yarış gününe hoş geldiniz! Ayarlamaya başlayın",
-    "to pull in the correct Track data, then check your": "doğru Pist verilerini çekmek için, ardından kontrol edin",
+    "All checks complete! Great job, your car setup and strategy are ready. Trust your analysis and good luck out there on the track!":
+      "Tüm kontroller tamamlandı! Harika iş çıkardınız, araç ve stratejiniz hazır. Analizinize güvenin ve pistte başarılar!",
+    "You're almost there. Double check your tyre strategy based on the track temperature. It often drops towards the end of the race!":
+      "Neredeyse bitti. Pist sıcaklığına bağlı olarak lastik stratejinizi tekrar kontrol edin. Sıcaklıklar genellikle yarışın sonlarına doğru düşer!",
+    "Welcome to race day! Start by configuring your":
+      "Yarış gününe hoş geldiniz! Ayarlamaya başlayın",
+    "to pull in the correct Track data, then check your":
+      "doğru Pist verilerini çekmek için, ardından kontrol edin",
     "limits.": "sınırlarınızı.",
     "Track Selection": "Pist Seçimi",
     "Total Race Laps:": "Toplam Yarış Turu:",
     "Fetch F1 Calendar": "F1 Takvimini Getir",
     "Fetching liand calendar...": "F1 Takvimi getiriliyor...",
-    "Language": "Dil",
+    Language: "Dil",
     "Language / Dil ": "Language / Dil",
     "Next Race": "Sıradaki Yarış",
-    "Days": "Gün",
-    "Hrs": "Saat",
-    "Min": "Dak",
-    "Sec": "San",
-    "Pending": "Bekleniyor...",
-    "Stint": "Stint",
-    "Laps": "Tur",
+    Days: "Gün",
+    Hrs: "Saat",
+    Min: "Dak",
+    Sec: "San",
+    Pending: "Bekleniyor...",
+    Stint: "Stint",
+    Laps: "Tur",
     "App Menu": "Uygulama Menüsü",
-    "Notifications": "Bildirimler",
+    Notifications: "Bildirimler",
     "Recent Notifications": "Son Bildirimler",
     "Welcome to Pitwall Pro": "Pitwall Pro'ya Hoş Geldiniz",
-    "We recently updated the stint lap distribution charts and added translation capabilities!": "Kısa süre önce stint tur dağılım grafiklerini güncelledik ve çeviri özellikleri ekledik!",
+    "We recently updated the stint lap distribution charts and added translation capabilities!":
+      "Kısa süre önce stint tur dağılım grafiklerini güncelledik ve çeviri özellikleri ekledik!",
     "Calendar Fetch Fixed": "Takvim Çekme Düzeltildi",
-    "You can now automatically pull the upcoming F1 track from the Dashboard.": "Artık panelden sıradaki F1 pistini otomatik çekebilirsiniz.",
+    "You can now automatically pull the upcoming F1 track from the Dashboard.":
+      "Artık panelden sıradaki F1 pistini otomatik çekebilirsiniz.",
     "Send Feedback": "Geri Bildirim Gönder",
-    "Let us know what features you want next or report a bug. Your message will be sent securely to the developer.": "Sonraki istediğiniz özellikleri belirtin veya hata bildirin. Mesajınız geliştiriciye güvenli bir şekilde iletilecektir.",
+    "Let us know what features you want next or report a bug. Your message will be sent securely to the developer.":
+      "Sonraki istediğiniz özellikleri belirtin veya hata bildirin. Mesajınız geliştiriciye güvenli bir şekilde iletilecektir.",
     "Type your feedback here...": "Geri bildiriminizi buraya yazın...",
     "Feedback Sent! Thank you.": "Geri bildirim gönderildi! Teşekkürler.",
-    "Submit": "Gönder",
+    Submit: "Gönder",
     "Track & Conditions": "Pist ve Koşullar",
     "Smart Setup Assistant": "Akıllı Setup Asistanı",
-    "Dynamic recommendations based on active track and weather": "Aktif pist ve hava durumuna göre dinamik öneriler",
+    "Dynamic recommendations based on active track and weather":
+      "Aktif pist ve hava durumuna göre dinamik öneriler",
     "Wings (FW/RW)": "Kanat (FW/RW)",
-    "Hard": "Sert",
-    "Medium": "Orta",
-    "Increase downforce in high temperature": "Yüksek sıcaklıkta yere basma kuvvetini artır",
+    Hard: "Sert",
+    Medium: "Orta",
+    "Increase downforce in high temperature":
+      "Yüksek sıcaklıkta yere basma kuvvetini artır",
     "Acceleration focus": "Hızlanma odaklı",
-    "Engine": "Motor",
-    "Suspension": "Süspansiyon",
+    Engine: "Motor",
+    Suspension: "Süspansiyon",
     "Corner balance focus": "Viraj denge odaklı",
     "Setup Note:": "Kurulum Notu:",
-    "Calculations automatically adapt using the temperature": "Hesaplamalar sıcaklığı",
-    "and": "ve",
-    "data and adapts accordingly. Driver skills affect suspension travel.": "verilerini kullanarak otomatik uyarlanır. Pilot yetenekleri süspansiyon esnekliğini etkiler.",
+    "Calculations automatically adapt using the temperature":
+      "Hesaplamalar sıcaklığı",
+    and: "ve",
+    "data and adapts accordingly. Driver skills affect suspension travel.":
+      "verilerini kullanarak otomatik uyarlanır. Pilot yetenekleri süspansiyon esnekliğini etkiler.",
     "Fast / Very High Wear": "Hızlı / Çok Yüksek Aşınma",
     "Extreme Wear": "Aşırı Aşınma",
-    "Balanced": "Dengeli",
-    "Durable": "Dayanıklı",
+    Balanced: "Dengeli",
+    Durable: "Dayanıklı",
     "Highly Durable": "Yüksek Dayanıklı",
     "Extremely Durable": "Aşırı Dayanıklı",
-    "Good": "İyi",
-    "Bad": "Kötü",
+    Good: "İyi",
+    Bad: "Kötü",
     "Calculated penalty per liter:": "Litre başına hesaplanan zaman kaybı:",
     "Refuel Rate (L/s)": "Yakıt Dolum Hızı (L/s)",
     "Active Track": "Aktif Pist",
     "Fuel per Lap": "Tur Başına Yakıt",
     "Pit Stop Parameter": "Pit Stop Parametresi",
     "Base:": "Baz:",
-    "sec": "sn",
+    sec: "sn",
     "Fastest (Recommended)": "En Hızlı (Önerilen)",
-    "Inspecting": "İnceleniyor...",
+    Inspecting: "İnceleniyor...",
     "Overwear Risk": "Aşırı Aşınma Riski",
     "Distance:": "Mesafe:",
     "Wear:": "Aşınma (Wear):",
     "Fuel:": "Yakıt (Fuel):",
     "Strategy Engine Recommendation": "Strateji Sisteminin Yorumu",
     "AI Insight": "Yapay Fikir",
-    "Recommended": "Önerilen",
+    Recommended: "Önerilen",
     "Confirm & Process": "Onayla & Sisteme İşle",
-    "Cancel": "İptal",
+    Cancel: "İptal",
     "Login to GPRO.": "GPRO'ya giriş yapın.",
     "Go to Account > API Access.": "Hesap > API Erişimi paneline gidin.",
-    "Click 'Generate Token' if none exists.": "Eğer yoksa 'Token Oluştur' butonuna basın.",
-    "Copy the long string and paste it below.": "Uzun metni kopyalayıp aşağıdaki alana yapıştırın.",
+    "Click 'Generate Token' if none exists.":
+      "Eğer yoksa 'Token Oluştur' butonuna basın.",
+    "Copy the long string and paste it below.":
+      "Uzun metni kopyalayıp aşağıdaki alana yapıştırın.",
     "Review & Confirm": "Gözden Geçir & Onayla",
     "API / JWT Integration": "API / JWT Entegrasyonu",
     "JWT Payload Data": "JWT Çözümlenen Veriler",
-    "Close": "Kapat",
-    "This token gets invalidated frequently. Official API Token (JWT) is permanent.": "Bu oturum çerezi sık sık geçersiz olur. Resmi API Token (JWT) kalıcıdır.",
+    Close: "Kapat",
+    "This token gets invalidated frequently. Official API Token (JWT) is permanent.":
+      "Bu oturum çerezi sık sık geçersiz olur. Resmi API Token (JWT) kalıcıdır.",
     "Detected Data": "Okunan Veriler",
     "Detected Rain Probabilities (%)": "Tespit Edilen Yağmur İhtimalleri (%)",
     "Est. Time Cost": "Tahmini Zaman Bedeli",
     "Pits:": "Pit Sayısı:",
-    "RISKY": "RİSKLİ",
-    "Safe": "Güvenli",
+    RISKY: "RİSKLİ",
+    Safe: "Güvenli",
     "No track selected for analysis.": "Analiz için pist seçilmedi.",
     "Total Race Distance": "Toplam Yarış Mesafesi",
     "Opponent Tactics": "Rakip Taktikleri",
-    "Analyze opponents past data and get race recommendations.": "Rakiplerin geçmiş verilerini analiz ederek yarış önerileri alın.",
+    "Analyze opponents past data and get race recommendations.":
+      "Rakiplerin geçmiş verilerini analiz ederek yarış önerileri alın.",
     "Add Opponent": "Rakip Ekle",
-    "Track your main rivals' pace, tyre choices, and expected strategies to find openings.": "Açıkları bulmak için ana rakiplerinizin hızlarını, lastik seçimlerini ve beklenen stratejilerini takip edin.",
+    "Track your main rivals' pace, tyre choices, and expected strategies to find openings.":
+      "Açıkları bulmak için ana rakiplerinizin hızlarını, lastik seçimlerini ve beklenen stratejilerini takip edin.",
     "No opponents added yet.": "Henüz rakip eklenmedi.",
     "Quali Diff": "Sıralama Farkı",
     "Tyre Choice": "Lastik Seçimi",
     "Est. Pits": "Tahmini Pit",
-    "Profile": "Profil",
+    Profile: "Profil",
     "Extra Softs": "Ekstra Yumuşak",
-    "Softs": "Yumuşak",
-    "Mediums": "Orta",
-    "Hards": "Sert",
-    "Rain": "Yağmur",
-    "Unknown": "Bilinmiyor",
+    Softs: "Yumuşak",
+    Mediums: "Orta",
+    Hards: "Sert",
+    Rain: "Yağmur",
+    Unknown: "Bilinmiyor",
     "High Tyre Wear": "Yüksek Lastik Aşınması",
     "Aggressive/Risky": "Agresif/Riskli",
     "Very Consistent": "Çok Tutarlı",
     "Slow Pit Stops": "Yavaş Pit Stopları",
     "Tactical Assessment": "Taktiksel Değerlendirme",
-    "They are on soft/fast rubber. Expect early pit stops. You can try to overcut them with harder tyres.": "Yumuşak/hızlı lastikteler. Erken pit stop bekleyin. Daha sert lastiklerle them'i pistte kalarak geçmeyi deneyebilirsiniz.",
-    "1-stop strategy means they will be heavy on fuel and careful with tyres. Push hard early to pass them.": "1 pit stop stratejisi yüksek yakıtla ve lastikleri koruyarak yarışacakları anlamına gelir. Onları geçmek için başta zorlayın.",
-    "Qualified ahead. If their tyre is softer, defend early. If harder, try an undercut.": "Önde sıralandılar. Lastikleri daha yumuşaksa başlarda savunun. Daha sertse erken pit (undercut) deneyin.",
-    "Aggressive driver or high wear. Let them ruin their tyres, attack at the end of the stint.": "Agresif sürücü veya yüksek aşınma profili. Lastiklerini bitirmelerine izin verin, stint sonlarında saldırın.",
-    "Standard strategy. Just focus on your own optimal pace.": "Standart strateji. Sadece kendi optimum hızınıza odaklanın.",
+    "They are on soft/fast rubber. Expect early pit stops. You can try to overcut them with harder tyres.":
+      "Yumuşak/hızlı lastikteler. Erken pit stop bekleyin. Daha sert lastiklerle them'i pistte kalarak geçmeyi deneyebilirsiniz.",
+    "1-stop strategy means they will be heavy on fuel and careful with tyres. Push hard early to pass them.":
+      "1 pit stop stratejisi yüksek yakıtla ve lastikleri koruyarak yarışacakları anlamına gelir. Onları geçmek için başta zorlayın.",
+    "Qualified ahead. If their tyre is softer, defend early. If harder, try an undercut.":
+      "Önde sıralandılar. Lastikleri daha yumuşaksa başlarda savunun. Daha sertse erken pit (undercut) deneyin.",
+    "Aggressive driver or high wear. Let them ruin their tyres, attack at the end of the stint.":
+      "Agresif sürücü veya yüksek aşınma profili. Lastiklerini bitirmelerine izin verin, stint sonlarında saldırın.",
+    "Standard strategy. Just focus on your own optimal pace.":
+      "Standart strateji. Sadece kendi optimum hızınıza odaklanın.",
     "Pit Stop Cost": "Pit Stop Maliyeti",
     "Avg Fuel Consumption": "Ort. Yakıt Tüketimi",
     "Highest Wear": "En Yüksek Aşınma",
     "Pit Time Stats": "Pit Süresi İstatistikleri",
-    "Stints": "Stintler",
+    Stints: "Stintler",
     "Estimated Base Wear": "Tahmini Baz Aşınma",
     "Estimated Fuel Cost": "Tahmini Yakıt Bedeli",
-    "Are you sure you want to reset driver and car settings to default?": "Pilot ve araç ayarlarını sıfırlamak istediğinize emin misiniz?",
+    "Are you sure you want to reset driver and car settings to default?":
+      "Pilot ve araç ayarlarını sıfırlamak istediğinize emin misiniz?",
     "No new notifications.": "Yeni bildirim yok.",
-    "Game": "Oyun",
-    "Update": "Güncelleme",
+    Game: "Oyun",
+    Update: "Güncelleme",
     "Upcoming Race Reminder": "Sıradaki Yarış Hatırlatması",
-    "The next race is approaching. Make sure to finalize your strategy setups before the deadline.": "Sıradaki yarış yaklaşıyor. Süre bitmeden strateji ayarlarınızı tamamlamayı unutmayın.",
+    "The next race is approaching. Make sure to finalize your strategy setups before the deadline.":
+      "Sıradaki yarış yaklaşıyor. Süre bitmeden strateji ayarlarınızı tamamlamayı unutmayın.",
     "Pitwall Pro v2.5.0 Update": "Pitwall Pro v2.5.0 Güncellemesi",
-    "Added notification separation, fixed horizontal graphs, and improved admin panel stability.": "Bildirim ayrıştırması eklendi, yatay grafikler düzeltildi ve admin paneli kararlılığı artırıldı.",
+    "Added notification separation, fixed horizontal graphs, and improved admin panel stability.":
+      "Bildirim ayrıştırması eklendi, yatay grafikler düzeltildi ve admin paneli kararlılığı artırıldı.",
     "Visible Stints": "Görünür Stintler",
     "Driver Weight (kg)": "Sürücü Ağırlığı (kg)",
     "Appearance Settings": "Görünüm Ayarları",
     "Theme, language and notifications": "Tema, dil ve bildirim ayarları",
     "Account & Sync": "Hesap & Senkronizasyon",
-    "Backup and sync data to cloud or sync between devices": "Verileri buluta yedekleyin veya cihazlar arası eşitleyin",
+    "Backup and sync data to cloud or sync between devices":
+      "Verileri buluta yedekleyin veya cihazlar arası eşitleyin",
     "Developer Admin": "Geliştirici Paneli",
-    "View user feedbacks and logs": "Kullanıcı geri bildirimlerini ve logları görüntüle",
+    "View user feedbacks and logs":
+      "Kullanıcı geri bildirimlerini ve logları görüntüle",
     "Advanced Constants": "Gelişmiş Sabitler",
     "Financial Overview": "Finansal Görünüm",
     "Estimated Car Value": "Tahmini Araç Değeri",
@@ -328,76 +428,89 @@ export const translations: Record<string, Record<string, string>> = {
     "Net Balance Preview": "Net Bilanço Hedefi",
     "Part Level Costs": "Parça Seviye Maliyetleri",
     "Economy AI Insight": "Yapay Zeka Ekonomi Analizi",
-    "Managing economy in GPRO requires balancing car wear with sponsor income. Upgrading parts increases your base speed but also significantly increases your replacement costs at the end of the race. Since you are in the": "GPRO'daki ekonomiyi yönetmek, parça aşınmasını sponsor gelirleri ile dengelemeyi gerektirir. Parçaları geliştirmek baz hızınızı artıracak lakin bunun yanında değiştirme masraflarınıda çok artıracaktır. Mevcut liginiz ",
-    "league, you should aim to maintain your car at levels that won't bankrupt you on high-wear tracks.": "olduğu için aşınması yüksek olan pistlerde iflasınızı önleyecek şekilde parça seviyelerinizi dengede tutmanız beklenmektedir.",
-    "Downgrade parts on tracks where they don't provide a major advantage if finances are tight.": "Maddi sıkıntılar söz konusuysa ve pist eğer çok avantaj sağlamıyorsa parça seviyelerini düşürüp tasarruf edin.",
-    "High Chassis, Suspensions, and Underbody reduce tire wear, which can save you a pit stop.": "Yüksek Şasi, Süspansiyonlar ve Alt Gövde tekerlek aşınmasını büyük oranda etkiler; bu size yeni bir pit stop süresi bile kazandırabilir.",
-    "Aim to keep Net Balance positive unless pushing for promotion.": "Üst seviye için kasmıyorsanız genellikle pozitif bir net bakiye olmasını dileyin.",
-    "Economy": "Ekonomi",
+    "Managing economy in GPRO requires balancing car wear with sponsor income. Upgrading parts increases your base speed but also significantly increases your replacement costs at the end of the race. Since you are in the":
+      "GPRO'daki ekonomiyi yönetmek, parça aşınmasını sponsor gelirleri ile dengelemeyi gerektirir. Parçaları geliştirmek baz hızınızı artıracak lakin bunun yanında değiştirme masraflarınıda çok artıracaktır. Mevcut liginiz ",
+    "league, you should aim to maintain your car at levels that won't bankrupt you on high-wear tracks.":
+      "olduğu için aşınması yüksek olan pistlerde iflasınızı önleyecek şekilde parça seviyelerinizi dengede tutmanız beklenmektedir.",
+    "Downgrade parts on tracks where they don't provide a major advantage if finances are tight.":
+      "Maddi sıkıntılar söz konusuysa ve pist eğer çok avantaj sağlamıyorsa parça seviyelerini düşürüp tasarruf edin.",
+    "High Chassis, Suspensions, and Underbody reduce tire wear, which can save you a pit stop.":
+      "Yüksek Şasi, Süspansiyonlar ve Alt Gövde tekerlek aşınmasını büyük oranda etkiler; bu size yeni bir pit stop süresi bile kazandırabilir.",
+    "Aim to keep Net Balance positive unless pushing for promotion.":
+      "Üst seviye için kasmıyorsanız genellikle pozitif bir net bakiye olmasını dileyin.",
+    Economy: "Ekonomi",
     "Sponsor Income": "Sponsor Geliri",
     "Knowledge Pool": "Bilgi Havuzu",
-    "General": "Genel",
+    General: "Genel",
     "Track Notes": "Pist Notları",
-    "Strategy": "Strateji",
-    "Notes about track conditions, tyre wear patterns...": "Pist koşulları, lastik aşınma durumları ile ilgili notlar...",
-    "Saved strategy setups and fuel estimations...": "Kaydedilen strateji ayarları ve yakıt tahminleri...",
-    "General setups, random thoughts...": "Genel ayarlar, çeşitli değerlendirmeler...",
+    Strategy: "Strateji",
+    "Notes about track conditions, tyre wear patterns...":
+      "Pist koşulları, lastik aşınma durumları ile ilgili notlar...",
+    "Saved strategy setups and fuel estimations...":
+      "Kaydedilen strateji ayarları ve yakıt tahminleri...",
+    "General setups, random thoughts...":
+      "Genel ayarlar, çeşitli değerlendirmeler...",
     "Save Data": "Veriyi Kaydet",
     "Data Imports & Integrations": "Veri İçe Aktarma ve Entegrasyonlar",
     "Official API Token (JWT)": "Resmi API Token (JWT)",
     "Fetch API Data": "API'den Veri Çek",
-    "Prototype": "Prototip",
+    Prototype: "Prototip",
     "Select & Read Screenshot": "📷 Ekran Görüntüsü Seç ve Oku",
     "Scanning, please wait...": "Taranıyor, lütfen bekleyin...",
     "Session Cookie (PHPSESSID)": "Session Cookie (PHPSESSID)",
     "Doesn't work? (Alternative Method)": "Çalışmıyor mu? (Alternatif Yöntem)",
-    "API configuration and image recognition settings": "API konfigürasyonu ve görüntü tanıma ayarları",
+    "API configuration and image recognition settings":
+      "API konfigürasyonu ve görüntü tanıma ayarları",
     "Driver Data": "Sürücü Verileri",
     "Car Parts": "Araç Parçaları",
     "Race Data": "Yarış Verileri",
     "Auto API Sync": "Otomatik API Senkronizasyonu",
-    "Pulls data automatically on app launch if 2 hours passed since last race started. Conserves tokens.": "Son yarış başlangıcından 2 saat geçtiyse verileri otomatik çeker. Token tasarrufu sağlar.",
+    "Pulls data automatically on app launch if 2 hours passed since last race started. Conserves tokens.":
+      "Son yarış başlangıcından 2 saat geçtiyse verileri otomatik çeker. Token tasarrufu sağlar.",
     "Smart Sync": "Akıllı Senk",
-    "Cloud save mode for calculations.": "Hesaplamalar için bulut kaydetme modu.",
+    "Cloud save mode for calculations.":
+      "Hesaplamalar için bulut kaydetme modu.",
     "Alerts for transitions": "Geçişler için uyarılar",
     "Pit time and wear alerts.": "Pit zamanı ve aşınma uyarıları.",
     "Light Theme": "Açık Tema",
     "Dark Theme": "Koyu Tema",
-    "System": "Sistem",
-    "Preferences": "Tercihler",
+    System: "Sistem",
+    Preferences: "Tercihler",
     "Optional app behaviors": "İsteğe bağlı uygulama davranışları",
     "Give Feedback": "Geri Bildirim Gönder",
     "Data Integrations": "Veri Entegrasyonları",
     "Import data via OCR or API": "OCR veya API ile veri yükle",
-    "Test race conditions and strategies. Open to all for now during early development.": "Yarış koşullarını ve stratejileri test edin. Erken erişim aşamasında geçici olarak herkese açık.",
-  
-    "driver": "Sürücü",
-    "car": "Araç",
-    "track": "Pist",
-    "weather": "Hava",
-    "risks": "Riskler",
+    "Test race conditions and strategies. Open to all for now during early development.":
+      "Yarış koşullarını ve stratejileri test edin. Erken erişim aşamasında geçici olarak herkese açık.",
+
+    driver: "Sürücü",
+    car: "Araç",
+    track: "Pist",
+    weather: "Hava",
+    risks: "Riskler",
     "Ignore filters on Auto Sync": "Oto-Sync Filtrelerini Yoksay",
-    "When auto-sync runs, it will fetch and apply everything.": "Oto-sync çalıştığında tüm verileri çeker ve uygular.",
+    "When auto-sync runs, it will fetch and apply everything.":
+      "Oto-sync çalıştığında tüm verileri çeker ve uygular.",
     "Data Filters": "Veri Filtreleri",
-  }
+  },
 };
 
-let currentLang = 'en';
+let currentLang = "en";
 
 export const setLanguage = (lang: string) => {
-  currentLang = typeof lang === 'string' ? lang : 'en';
+  currentLang = typeof lang === "string" ? lang : "en";
 };
 
 export const t = (text: string): string => {
-  if (!currentLang || typeof currentLang !== 'string') return text;
-  if (currentLang === 'en' || currentLang === '') return text;
-  
+  if (!currentLang || typeof currentLang !== "string") return text;
+  if (currentLang === "en" || currentLang === "") return text;
+
   // Extract primary language code (e.g. 'tr-TR' -> 'tr')
-  const baseLang = currentLang.split('-')[0].toLowerCase();
-  
+  const baseLang = currentLang.split("-")[0].toLowerCase();
+
   if (translations[baseLang] && translations[baseLang][text]) {
     return translations[baseLang][text];
   }
-  
+
   return text; // fallback to English
 };

@@ -1,0 +1,14 @@
+                        <div className="flex items-start justify-between mb-4">
+                          <div>
+                            <div className="flex items-center gap-2">
+                               <h3 className={`text-lg font-bold ${selectedStratIndex === 0 ? 'text-emerald-800 dark:text-emerald-300' : 'text-indigo-900 dark:text-indigo-300'}`}>{t("Selected Strategy:")} {selectedStrategy!.stops} Pit Stop</h3>
+                               {manualStintLaps && baseSelectedStrategy && (JSON.stringify(manualStintLaps) !== JSON.stringify(baseSelectedStrategy.stints.map(s => s.laps))) && (
+                                   <button 
+                                      onClick={() => setManualStintLaps(baseSelectedStrategy.stints.map(s => s.laps))}
+                                      className={`px-2 py-0.5 text-[10px] font-bold uppercase rounded border ${selectedStratIndex === 0 ? 'text-emerald-600 border-emerald-300 hover:bg-emerald-100' : 'text-indigo-600 border-indigo-300 hover:bg-indigo-100'} transition`}
+                                   >
+                                      Reset
+                                   </button>
+                               )}
+                            </div>
+                            <p className={`${selectedStratIndex === 0 ? 'text-emerald-600' : 'text-indigo-600'} text-sm mt-1`}>{t("Relative Time Cost:")} <span className="font-mono">+{selectedStrategy!.totalRaceTime.toFixed(1)} {t("sec")}</span></p>

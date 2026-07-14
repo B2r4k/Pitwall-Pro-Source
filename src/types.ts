@@ -3,12 +3,12 @@ export interface Track {
   name: string;
   laps: number;
   distance: number; // km
-  fuelSeverity: 'Very Low' | 'Low' | 'Medium' | 'High' | 'Very High';
-  wearSeverity: 'Very Low' | 'Low' | 'Medium' | 'High' | 'Very High';
+  fuelSeverity: "Very Low" | "Low" | "Medium" | "High" | "Very High";
+  wearSeverity: "Very Low" | "Low" | "Medium" | "High" | "Very High";
   pitTimeBase: number; // seconds (entering/exiting pitlane)
 }
 
-export type TyreCompound = 'XS' | 'S' | 'M' | 'H' | 'Rain';
+export type TyreCompound = "XS" | "S" | "M" | "H" | "Rain";
 
 export interface Weather {
   tempBase: number;
@@ -37,7 +37,7 @@ export interface CarParts {
   electronics: number;
 }
 
-export type League = 'Rookie' | 'Amateur' | 'Pro' | 'Master' | 'Elite';
+export type League = "Rookie" | "Amateur" | "Pro" | "Master" | "Elite";
 
 export interface PlayerStats {
   name?: string;
@@ -51,7 +51,7 @@ export interface PlayerStats {
     malfunction: number;
   };
   totalRacers?: number;
-  pha?: { power: number; handling: number; acceleration: number; };
+  pha?: { power: number; handling: number; acceleration: number };
   driverFocus: number; // Concentration (0-250)
   driverStamina: number; // Stamina (0-250)
   driverExperience: number; // Experience (0-250)

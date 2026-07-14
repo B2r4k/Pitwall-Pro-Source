@@ -5,7 +5,7 @@ import * as cheerio from "cheerio";
 async function startServer() {
   const app = express();
   const PORT = 3000;
-  
+
   app.use(express.json());
 
   // Health route
@@ -18,41 +18,71 @@ async function startServer() {
     try {
       const endpoint = req.query.endpoint;
       if (!endpoint) return res.status(400).json({ error: "Missing endpoint" });
-      const targetUrl = 'https://gpro.net/gb' + endpoint;
-      
+      const targetUrl = "https://gpro.net/gb" + endpoint;
+
       const authHeader = req.headers.authorization;
-      const token = authHeader ? authHeader.split(' ')[1] : process.env.GPRO_API_TOKEN;
+      const token = authHeader
+        ? authHeader.split(" ")[1]
+        : process.env.GPRO_API_TOKEN;
 
       if (!token) {
-        return res.status(401).json({ error: "Missing GPRO API Token. Please provide it in settings or Vercel env variables." });
+        return res
+          .status(401)
+          .json({
+            error:
+              "Missing GPRO API Token. Please provide it in settings or Vercel env variables.",
+          });
       }
 
       const fetchOptions: any = {
         method: req.method,
         headers: {
-          'Authorization': 'Bearer ' + token,
-          'Accept': 'application/json'
-        }
+          Authorization: "Bearer " + token,
+          Accept: "application/json",
+        },
       };
 
-      if (req.method !== 'GET' && req.method !== 'HEAD') {
-         fetchOptions.headers['Content-Type'] = 'application/json';
-         fetchOptions.body = JSON.stringify(req.body);
+      if (req.method !== "GET" && req.method !== "HEAD") {
+        fetchOptions.headers["Content-Type"] = "application/json";
+        fetchOptions.body = JSON.stringify(req.body);
       }
 
-      const response = await fetch(targetUrl, fetchOptions);
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10s timeout
+      fetchOptions.signal = controller.signal;
+      
+      let response;
+      try {
+        response = await fetch(targetUrl, fetchOptions);
+      } catch (err: any) {
+        if (err.name === 'AbortError') {
+          return res.status(504).json({ error: "GPRO API request timed out (10s)" });
+        }
+        throw err;
+      } finally {
+        clearTimeout(timeoutId);
+      }
 
       if (!response.ok) {
-         console.error('GPRO API returned ' + response.status + ' for ' + targetUrl);
-         let errorText = "";
-         try { errorText = await response.text(); } catch(e) {}
-         return res.status(response.status).json({ error: 'GPRO API Error: ' + response.status, details: errorText });
+        console.error(
+          "GPRO API returned " + response.status + " for " + targetUrl,
+        );
+        let errorText = "";
+        try {
+          errorText = await response.text();
+        } catch (e) {}
+        return res
+          .status(response.status)
+          .json({
+            error: "GPRO API Error: " + response.status,
+            details: errorText,
+          });
       }
 
       const text = await response.text();
       try {
         res.json(JSON.parse(text));
-      } catch(e) {
+      } catch (e) {
         res.send(text);
       }
     } catch (error) {
@@ -71,10 +101,10 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // production mode
-    const distPath = path.join(process.cwd(), 'dist');
+    const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(distPath, "index.html"));
     });
   }
 
